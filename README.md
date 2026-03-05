@@ -418,17 +418,12 @@ Found 423 cameras matching '192.168'
 ```
 SAS-CAM/
 ├── start.py                      # Main application (CameraViewer)
-├── d.py                          # Original reference script (legacy)
 ├── requirements.txt              # Python dependencies
 ├── install_requirements.bat      # Windows installation script
 ├── start.sh                      # Linux/Termux launcher
 ├── config.json                   # Configuration settings
 ├── README.md                     # This file
 ├── LICENSE                       # MIT License
-├── CHANGELOG.md                  # Version history
-├── SECURITY.md                   # Security information
-├── CONTRIBUTING.md               # Contribution guidelines
-├── .gitignore                    # Git ignore patterns
 └── sas_cam.log                   # Log file (auto-created on first run)
 ```
 
@@ -786,3 +781,4 @@ Special thanks to:
 ---
 
 **For the latest updates, visit the project repository and check the Wiki for advanced topics.**
+
