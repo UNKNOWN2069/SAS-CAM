@@ -1,0 +1,45 @@
+{
+  "application": {
+    "name": "SAS-CAM",
+    "version": "1.0.0",
+    "author": "SAS-CAM Development Team",
+    "description": "Professional Global IP Camera Discovery Tool for Security Research"
+  },
+  "settings": {
+    "output_directory": "scan_results",
+    "log_file": "sas_cam.log",
+    "timeout": 10,
+    "rate_limit_delay": 2
+  },
+  "connection": {
+    "max_retries": 3,
+    "backoff_factor": 1,
+    "verify_ssl": true
+  },
+  "sources": {
+    "primary": "http://www.insecam.org/en/jsoncountries/",
+    "endpoints": {
+      "countries": "http://www.insecam.org/en/jsoncountries/",
+      "by_country": "http://www.insecam.org/en/bycountry/"
+    }
+  },
+  "user_agents": [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
+    "Mozilla/5.0 (X11; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0",
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Mobile/15E148 Safari/604.1"
+  ],
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(levelname)s - %(message)s",
+    "console_output": true,
+    "file_output": true
+  },
+  "security": {
+    "anonymity": "high",
+    "use_proxy": false,
+    "proxy_list": []
+  }
+}
